@@ -13,5 +13,5 @@ else
 	#echo "addr: $1"
 	#echo "duration: $2"
 	today=`date +%Y-%m-%d_%H-%M-%S`
-	cvlc -vvv rtsp://$1:554/live/video/profile1  --sout=file/ts:~/Videos/$today.mp4 --run-time=$3 vlc://quit
+	cvlc -vvv rtsp://$1:554/live/video/profile1  --sout=file/ts:~/Videos/$today.mp4 --run-time=$2 vlc://quit
 fi
